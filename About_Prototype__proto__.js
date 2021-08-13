@@ -12,3 +12,13 @@ Constructor.prototype.property1 = 'Constructor Prototype Property';
 var instance = new Constructor('Instance');
 console.dir(Constructor);
 console.dir(instance);
+
+// 대표적인 내장 생성자 함수인 Array
+
+var arr = [1, 2];
+console.dir(arr);
+console.dir(Array);
+
+arr.forEach(function () {});
+console.log(Array.isArray(arr));
+// arr.isArray(); Array의 prototype property 내부에 있지않음.
