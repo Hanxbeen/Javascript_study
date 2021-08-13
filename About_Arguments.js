@@ -3,12 +3,12 @@
 // Array로 변경할 수 있는 방법은 다음과 같이 네가지가 있습니다.
 
 function func1(a, b, c) {
-  var args = Array.prototype.slice.call(arguments);
-  var args = [].slice.call(arguments);
-  var args = Array.from(arguments);
+  // var args = Array.prototype.slice.call(arguments);
+  // var args = [].slice.call(arguments);
+  // var args = Array.from(arguments);
   var args = [...arguments];
   console.log(args);
 }
 
 func1(1, 2, 3);
-func1("a", "b", "c");
+func1('a', 'b', 'c');
